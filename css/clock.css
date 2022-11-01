@@ -1,0 +1,26 @@
+.bg-img {
+   background-image: url(../img/golden-gate-bridge-san-francisco-california-scenic-pink-sky-2880x1800-3215.jpg);
+   background-position: 100% 50%;
+   width: 100%;
+   height: 405px;
+   background-repeat: no-repeat;
+}
+
+#time {
+   font-family: 'Akaya Telivigala', cursive;
+   font-size: 80px;
+   color: #fff;
+}
+
+.clock>ul {
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   color: #fff;
+   text-transform: uppercase;
+   font-size: 12px;
+   margin-top: -50px;
+}
+
+.clock>li {
+   display: flex;
+
+}
