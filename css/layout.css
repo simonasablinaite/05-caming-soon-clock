@@ -5,7 +5,39 @@
 
 .container>.row {
    display: flex;
-   width: 400px;
-   margin: auto;
+   width: 450px;
+   margin: 0 calc(50% - 225px);
    text-align: center;
+}
+
+
+
+@media (min-width: 576px) {
+   .container>.row {
+      width: 540px;
+   }
+}
+
+@media (min-width: 768px) {
+   .container>.row {
+      width: 720px;
+   }
+}
+
+@media (min-width: 992px) {
+   .container>.row {
+      width: 960px;
+   }
+}
+
+@media (min-width: 1200px) {
+   .container>.row {
+      width: 1140px;
+   }
+}
+
+@media (min-width: 1400px) {
+   .container>.row {
+      width: 1320px;
+   }
 }
