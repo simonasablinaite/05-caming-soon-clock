@@ -5,7 +5,7 @@
 
 .container>.row {
    display: flex;
-   width: 450px;
+   width: 600px;
    margin: 0 calc(50% - 225px);
    text-align: center;
 }
@@ -22,21 +22,18 @@
 @media (min-width: 768px) {
    .container>.row {
       width: 720px;
-      margin: 0 calc(50% - 360px);
    }
 }
 
 @media (min-width: 992px) {
    .container>.row {
       width: 960px;
-      margin: 0 calc(50% - 480px);
    }
 }
 
 @media (min-width: 1200px) {
    .container>.row {
       width: 1140px;
-      margin: 0 calc(50% - 570px);
    }
 }
 
