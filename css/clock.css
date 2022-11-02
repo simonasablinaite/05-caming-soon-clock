@@ -1,3 +1,10 @@
+.bg {
+   background: rgb(131, 0, 148);
+   background: linear-gradient(180deg, rgba(131, 0, 148, 1) 23%, rgba(9, 138, 240, 1) 53%, rgba(34, 20, 84, 1) 82%);
+   background-repeat: no-repeat;
+   height: 800px;
+}
+
 .bg-img {
    background-image: url(../img/golden-gate-bridge-san-francisco-california-scenic-pink-sky-2880x1800-3215.jpg);
    height: 600px;
@@ -13,6 +20,7 @@
    align-items: center;
    text-align: center;
 }
+
 
 .clock>ul {
    display: flex;
