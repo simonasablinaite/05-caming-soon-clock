@@ -1,12 +1,11 @@
 .container {
-   display: inline-block;
+   display: flex;
    width: 100%;
-   padding: 60px 20px;
 }
 
 .container>.row {
-   display: inline;
+   display: flex;
    width: 400px;
-   margin: 0 calc(50% - 200px);
+   margin: auto;
    text-align: center;
 }
