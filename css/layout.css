@@ -10,7 +10,7 @@ body {
 .container>.row {
    display: flex;
    width: 600px;
-   margin: 0 calc(50% - 300px);
+   margin: 150px calc(50% - 300px);
    text-align: center;
    align-items: center;
    justify-content: center;
