@@ -1,34 +1,31 @@
-//Data iki kurios skaiciuojamas laikas
 const countDownDate = new Date("Dec 23, 2022 12:00:00").getTime();
 
-//Skaiciavimo atnaujinimas kas 1s
-const x = setInterval(function () {
-  //šiandienos data ir laikas
-  const now = new Date().getTime();
+const clockDOM = document.getElementById("time");
 
-  //Laikas nuo dabar iki deadlin'o
-  const diff = countDownDate - now;
+const format = (n) => (n < 10 ? "0" + n : n);
+
+const x = setInterval(function () {
+  const now = new Date().getTime();
+  const diff = Math.floor((countDownDate - now) / 1000);
+
   if (diff <= 0) {
     clearInterval(x);
-    document.getElementById("time").textContent = "LAIKAS BAIGĖSI!";
+    clockDOM.textContent = "LAIKAS BAIGĖSI! :(";
   } else {
-    // Sekundės kintamasis
-    const second = 1000 * 60;
+    const seconds = diff % 60;
+    diff = (diff - seconds) / 60;
 
-    //Apskaiciuojamas laikas dienomis, valandomis, minutemis ir sekundemis
-    const days = Math.floor(diff / (second * 60 * 24));
-    const hours = (
-      "0" + Math.floor((diff % (second * 60 * 24)) / (second * 60))
-    ).slice(-2);
-    const minutes = ("0" + Math.floor((diff % (second * 60)) / second)).slice(
-      -2
-    );
-    const seconds = ("0" + Math.floor((diff % second) / 1000)).slice(-2);
-    //Isvedamas elementas
-    document.getElementById("time").textContent = `${days} 
-    ${hours} 
-    ${minutes} 
-    ${seconds}
-    `;
+    const minutes = diff % 60;
+    diff = (diff - minutes) / 60;
+
+    const hours = diff % 24;
+    diff = (diff - hours) / 24;
+
+    const days = diff / 24;
+
+    // const days = diff / 24;
+    clockDOM.textContent = `${diff} ${days} ${format(hours)} ${format(
+      minutes
+    )} ${format(seconds)}`;
   }
 });
