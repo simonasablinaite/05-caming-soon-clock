@@ -20,27 +20,27 @@ body {
 @media (max-width: 700px) {
    .container>.row {
       width: 500px;
-      margin: 0 calc(50% - 250px);
+      margin: 150px calc(50% - 250px);
    }
 }
 
 @media (max-width: 600px) {
    .container>.row {
       width: 400px;
-      margin: 0 calc(50% - 200px);
+      margin: 150px calc(50% - 200px);
    }
 }
 
 @media (max-width: 480px) {
    .container>.row {
       width: 320px;
-      margin: 0 calc(50% - 160px);
+      margin: 150px calc(50% - 160px);
    }
 }
 
 @media (max-width: 390px) {
    .container>.row {
       width: 200px;
-      margin: 0 calc(50% - 100px);
+      margin: 150px calc(50% - 100px);
    }
 }
