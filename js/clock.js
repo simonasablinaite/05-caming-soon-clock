@@ -1,5 +1,5 @@
 //Data iki kurios skaiciuojamas laikas
-const countDownDate = new Date("Nov 04, 2022 08:32:00").getTime();
+const countDownDate = new Date("Dec 23, 2022 12:00:00").getTime();
 
 //Skaiciavimo atnaujinimas kas 1s
 const x = setInterval(function () {
@@ -10,7 +10,7 @@ const x = setInterval(function () {
   const diff = countDownDate - now;
   if (diff <= 0) {
     clearInterval(x);
-    document.getElementById("time").textContent = "LAIKAS BAIGĖSI! :(";
+    document.getElementById("time").textContent = "LAIKAS BAIGĖSI!";
   } else {
     // Sekundės kintamasis
     const second = 1000 * 60;
