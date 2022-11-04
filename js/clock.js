@@ -10,7 +10,7 @@ const x = setInterval(function () {
 
   if (diff <= 0) {
     clearInterval(x);
-    clockDOM.innerText = "LAIKAS BAIGĖSI! :(";
+    clockDOM.textContent = "LAIKAS BAIGĖSI! :(";
   } else {
     const seconds = diff % 60;
     diff = (diff - seconds) / 60;
@@ -23,8 +23,8 @@ const x = setInterval(function () {
 
     // const days = diff / 24;
 
-    clockDOM.innerText = `${diff} ${format(hours)} ${format(minutes)} ${format(
-      seconds
-    )}`;
+    clockDOM.textContent = `${diff} ${format(hours)} ${format(
+      minutes
+    )} ${format(seconds)}`;
   }
 });
