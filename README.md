@@ -23,6 +23,7 @@ Design: [Coming soon](https://cdn.discordapp.com/attachments/850245533838868480/
 - CSS
 - JS
 - Github pages
+- Responsive design
 
 ## Authors
 
