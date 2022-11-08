@@ -21,10 +21,8 @@ const x = setInterval(function () {
     const hours = diff % 24;
     diff = (diff - hours) / 24;
 
-    // const days = diff / 24;
-
     clockDOM.textContent = `${diff} ${format(hours)} ${format(
       minutes
     )} ${format(seconds)}`;
   }
-});
+}, 1000);
