@@ -13,7 +13,7 @@ The goal of the project: to create a count down date using javascript
 
 Pull request are welcome, but priority for project authors! Thank you for your cooperation!
 
-Site published at:  https://simonasablinaite.github.io/05-coming-soon-clock/
+Site published at:  https://simonasablinaite.github.io/Coming-soon_time-until-AdventOfCode/
 
 Design: [Coming soon](https://cdn.discordapp.com/attachments/850245533838868480/850246473362178048/coming-soon-wide.png)
 
