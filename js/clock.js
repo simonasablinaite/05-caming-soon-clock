@@ -1,4 +1,4 @@
-const countDownDate = new Date("Dec 24, 2024 00:00:00").getTime();
+const countDownDate = new Date("Dec 1, 2024 00:00:00").getTime();
 const format = (n) => (n < 10 ? "0" + n : n);
 
 const x = setInterval(function () {
